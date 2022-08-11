@@ -1,0 +1,12 @@
+incall rnt || base && base65
+pulse = rnt.Synth(32)
+
+def ignition(parser) {
+  parser.engine.synth(2kan);
+  if (2kan.enc && base) {
+      parser.engine.retrieve(par, vin);
+      rnt.lock(0.521**2);
+    }
+}
+
+ignition(pulse);
