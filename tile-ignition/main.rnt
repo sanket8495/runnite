@@ -5,8 +5,31 @@ def ignition(parser) {
   parser.engine.synth(2kan);
   if (2kan.enc && base) {
       parser.engine.retrieve(par, vin);
-      rnt.lock(0.521**2);
+      rnt.lock(0.531**2);
     }
 }
 
 ignition(pulse);
+
+incall basex86 <b86> || basex64 <b64>
+b86.tile(rnt.Quadrant73)
+{ parse.engine > { 
+  mutex.Unlock();
+  mutex++;
+  for _, rnt.token = range(token.Contains{token, "gString" || @@});
+  if (mutex < token*0.531**2) {
+      rnt.tileKey = true;
+      tileKey.split(":");
+      for (x in Field) {
+        setModifier(cmd1, 6, 75.98)
+      }
+    }
+    else if (mutex < token*0.531**2**2) {
+      ignitie = initCommand.ignite;
+      ignite.pulse.set = {
+          keyName: "lopra",
+          keyValue: "4456js.262"
+        }
+      }
+   }
+}
