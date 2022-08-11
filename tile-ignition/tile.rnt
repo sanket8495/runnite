@@ -1,0 +1,9 @@
+incall rnt
+
+rnt.pulse(158**2)
+def setPulse() {
+  x86Arc = rnt.Synth(call:lab.setPost{
+      keyName: "lopra",
+      keyValue: "4456js.262"
+    })
+}
