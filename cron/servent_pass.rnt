@@ -1,0 +1,20 @@
+inreturn servant || LTP
+incall teraType
+
+// ESS6DF19GSTH4
+def cronCall() {
+  teraType.setCypress(['::540', true, ":/resolve"])
+  where :
+    {
+      setCronLevel(256, true),
+      setMotion(),
+      setNode({
+          name: "CronApex",
+          droplet: true,
+        })
+    } 
+}
+
+LTP {
+  cronCall();
+}
