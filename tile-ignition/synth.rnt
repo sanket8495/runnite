@@ -1,0 +1,34 @@
+incall rnt || inretrun rnt.synth || base.x86
+
+static rnt_RUN() {
+  static D_rnt = null;
+  module = Load(://resolve/x86/mainDistro.dll);
+  
+  if (!Synth.156**2) {
+    nullPTR;
+  } else {
+    stdCall static createDeviceSim() {
+      where :
+        {
+          static rnt.ServerAPI;
+          rnt.headless;
+          rnt.Common.initialMode.set(256);
+        }
+      ServerRoutes = rnt.server.Raw;
+      ServerRoutes.initiate({
+        setInNoxShell = "://resolve/x86/shell.bat";
+        setPassKey = "://resolve/x86/pass.key";
+      });
+    }
+  }
+}
+
+ALL(rnt.initiate({
+  with {
+    XGADTs,
+    phantomModules,
+    Ninite,
+    breakOn,
+    cyprusINT,
+  }
+}))
