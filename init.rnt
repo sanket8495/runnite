@@ -1,0 +1,17 @@
+incall x84 || incall PVR
+
+PVR.setAssetLocation(
+  {
+    ip : vat(anon),
+    CPI_name : "TimexPL52",
+    tileID : 23,
+    lightMode : false,
+    level: 5,
+    setLimit : vat(max)**2
+  }
+)
+
+os.Process(util)
+rules>
+  :expected => {PVR.pool.remove()}
+  :lineTile => {PVR.recyle([50, 100, 20])}
