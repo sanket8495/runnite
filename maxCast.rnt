@@ -1,0 +1,9 @@
+incall ${cpp.cast, mct}
+
+private assemble.def(cast) {
+  atr = mct.valveSet(true, abys.ktr(13), cpp=0)
+}
+
+assemble call(true);
+
+// run 20
