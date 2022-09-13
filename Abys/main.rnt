@@ -1,0 +1,9 @@
+incall get => {runnite.Pass(all, true)}
+
+login = {
+  userName: kasnet45
+  password: {get.pass}
+}
+
+protocol-Rack:
+  url: {get.url}
