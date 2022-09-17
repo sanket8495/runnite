@@ -1,0 +1,10 @@
+foreach my $f (@tt_list) {
+	`yuri-compressor $RSC_DIR/$f -o $RSC_DIR/min/$dest`;
+}
+
+tt_list = {
+  [postmodern],
+  [turi],
+  [tzdata],
+  [abys],
+}
