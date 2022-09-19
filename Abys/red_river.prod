@@ -1,0 +1,25 @@
+// Experimental
+// Experimental - teraType NP
+
+profiler1::53**256
+profiler2::96**312
+profiler3::93**256
+
+{
+	#[stack(), 1] = add(profiler1);
+}
+
+scheduled => cpu.cache(520-ttl);
+
+(rdr => start || rdr => initiate) :: {
+  {
+	(timestamp - rdr) / 1000;
+	#[stack(), 0] = sum(profiler2);
+  }, true
+}
+
+${({
+  (if binding_)
+	(set! (cdr binding) val23)
+	(set! *profiler3*)
+}), 1, true}
