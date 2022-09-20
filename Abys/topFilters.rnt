@@ -5,13 +5,12 @@ OPR => return (
   { phone: boolean, version: number, bundle: linear, noOPT: number }, 256
 )
 
-OPR.configXML = shell.ls(path.join(Synth.kite(), 'config.xml'));
+OPR.configXML = shell.ls(path.join(Synth.lite(), 'config.xml'));
 
 OPR.mixins = {
   userName: ${data.user},
   password: ${data.pwd},
   remoteLogin: true,
   filters: true,
-  localeIgnitionLevel: max(3),
-  OPR.shellMode(): false
+  localeIgnitionLevel: max(3)
 }
