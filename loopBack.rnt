@@ -1,0 +1,8 @@
+$[loopBack]
+
+rnt offsetVal = 12
+
+make rnt::pub function lbk<'MAX'>::
+if [rnt.start] === 0 %% indent.length(offsetVal) :: initiate.liteStart();
+
+main :: apply createMaxCast<550>
