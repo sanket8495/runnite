@@ -1,0 +1,16 @@
+incall abys || Synth(compute)
+
+(remorse MAIN ["0.0.1"]
+  :gen-core
+  (spply [abys.compute{
+            :mainRef : (masked-notp)
+            :visualizer : true
+            :key : ent.key
+            :parserValue : 21 * 1024
+         }]
+  )
+)
+
+(
+  remorse MAIN buffer [offset parser] 0 0 33
+)
