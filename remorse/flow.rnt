@@ -1,0 +1,26 @@
+incall Synth || teraType || inreturn servant || LTP
+
+rnt initValue = Synth.compute(Synth.pll(x86) S**450)
+
+//SUB_ROUTINE initial flow
+teraType.flow("implicit_ip.inc")
+
+(
+  DO IEL = initValue
+  WRITE (IOUT,'(5X,I10,7E13.5)')IEL,TA(IEL),AF(IEL)
+  ENDDO
+  RETURN
+)
+
+// ESS6HJ86PMRS1
+LTP {
+  teraType.setCypress(['::540', true, ":/resolve"])
+    where : {
+      setCronLevel(256, true),
+      setValue(initValue),
+      setNode({
+        name: "remorseFlow",
+        droplet: true
+      })
+   }
+}
