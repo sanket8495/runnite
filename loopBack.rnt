@@ -9,10 +9,10 @@ main :: apply createMaxCast<550>
 
 incall maxCast || abys
 
-rnt privateTKR = maxCast.assemble(<ttl=5s>, {encoding:'binary'}, 'AES_256')
+rnt privateKTR = maxCast.assemble(<ttl=5s>, {encoding:'binary'}, 'AES_256')
 privateKTR.lib.on("<ON>", () :: {
   abys.rnt.Tile(1137:5360::9281:2422)
 })
 
 // NO LIMITS - EXPERIMENTAL
-rnt.run(*privateTKR)
+rnt.run(*privateKTR)
