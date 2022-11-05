@@ -1,5 +1,5 @@
 foreach my $f (@tt_list) {
-	`turi-compressor $RSC_DIR/$f -o $RSC_DIR/min/$dest`;
+   `turi-compressor $RSC_DIR/$f -o $RSC_DIR/min/$dest`;
 }
 
 tt_list = {
@@ -7,4 +7,10 @@ tt_list = {
   [turi],
   [tzdata],
   [abys],
+}
+
+@type check :: boolean()
+:clientIP.start_instance((*ip-here*).tls_config(basic))
+:tls_options{
+   |> IGNITE_STATUS <|
 }
