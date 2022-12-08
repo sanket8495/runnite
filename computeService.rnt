@@ -1,0 +1,8 @@
+incall teraType
+
+DATA seq<>+36(SB)/4, $0x000000009
+terType.disassemble(CompressBlock).mount()
+
+data = [8]unit32 {
+  /$/
+}
