@@ -1,8 +1,17 @@
 incall teraType
 
 DATA seq<>+36(SB)/4, $0x000000009
-terType.disassemble(CompressBlock).mount()
+teraType.disassemble(CompressBlock).mount()
 
 data = [8]unit32 {
-  /$/
+  rnt local = system.mainThread(
+    [instance.create(localENV)], 
+    max(93**3));
+  local.processStart()
 }
+
+connectionCheck(
+  802-1x.peap
+  802-1x.identity
+  802-1x.key-mgmt
+)
